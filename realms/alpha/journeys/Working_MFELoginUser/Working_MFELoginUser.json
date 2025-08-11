@@ -1,0 +1,76 @@
+{
+  "_id": "Working_MFELoginUser",
+  "_rev": "856368202",
+  "enabled": true,
+  "entryNodeId": "bb103d5c-e790-4452-93c7-df896d286cde",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "nodes": {
+    "36b8ed90-ecb3-486a-b7c3-553ab0c3e50e": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ok": "bae04c9a-96fe-408d-ad00-462d23c776ae"
+      },
+      "displayName": "Email Suspend ",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 854.015625,
+      "y": 145.5390625
+    },
+    "696481f0-5f60-4bb6-bd7b-003daf32f4fc": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Increment Login Count",
+      "nodeType": "IncrementLoginCountNode",
+      "x": 1215.015625,
+      "y": 264.5390625
+    },
+    "bae04c9a-96fe-408d-ad00-462d23c776ae": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ok": "696481f0-5f60-4bb6-bd7b-003daf32f4fc"
+      },
+      "displayName": "Email Verification Flag",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1151.015625,
+      "y": 47.5390625
+    },
+    "bb103d5c-e790-4452-93c7-df896d286cde": {
+      "connections": {
+        "outcome": "e4fb3c4e-362a-4058-ae84-131f3ffca81b"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 214.015625,
+      "y": 87.5390625
+    },
+    "e4fb3c4e-362a-4058-ae84-131f3ffca81b": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "36b8ed90-ecb3-486a-b7c3-553ab0c3e50e"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 522.015625,
+      "y": 182.5390625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1554,
+      "y": 209
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1303,
+      "y": 454
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Login\"]"
+  }
+}

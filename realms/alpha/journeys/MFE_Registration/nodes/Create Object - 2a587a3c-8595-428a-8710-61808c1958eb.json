@@ -1,0 +1,20 @@
+{
+  "_id": "2a587a3c-8595-428a-8710-61808c1958eb",
+  "_outcomes": [
+    {
+      "displayName": "Created",
+      "id": "CREATED"
+    },
+    {
+      "displayName": "Failed",
+      "id": "FAILURE"
+    }
+  ],
+  "_rev": "-230204402",
+  "_type": {
+    "_id": "CreateObjectNode",
+    "collection": true,
+    "name": "Create Object"
+  },
+  "identityResource": "managed/alpha_user"
+}

@@ -1,0 +1,106 @@
+{
+  "_id": "MFE_Registration",
+  "_rev": "701116139",
+  "description": "Platform Registration Tree",
+  "enabled": true,
+  "entryNodeId": "604d6d84-101f-4817-86d6-b4b75c51f0ac",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "nodes": {
+    "2a587a3c-8595-428a-8710-61808c1958eb": {
+      "connections": {
+        "CREATED": "802e2fd7-ec30-484d-9551-0d9dcaaab82e",
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Create Object",
+      "nodeType": "CreateObjectNode",
+      "x": 501,
+      "y": 310
+    },
+    "2db7ec63-f856-42d6-9701-2b9661fb6dc3": {
+      "connections": {
+        "false": "7b1a938a-17c8-4cd3-8956-d1101a9f228e",
+        "true": "77cfab40-25ac-48b8-9444-3a95498d00c9"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 516.015625,
+      "y": 34.5390625
+    },
+    "604d6d84-101f-4817-86d6-b4b75c51f0ac": {
+      "connections": {
+        "outcome": "2db7ec63-f856-42d6-9701-2b9661fb6dc3"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 188.015625,
+      "y": 66.5390625
+    },
+    "77cfab40-25ac-48b8-9444-3a95498d00c9": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Inner Tree Evaluator",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 919.015625,
+      "y": 43.5390625
+    },
+    "7b1a938a-17c8-4cd3-8956-d1101a9f228e": {
+      "connections": {
+        "outcome": "2a587a3c-8595-428a-8710-61808c1958eb"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 207,
+      "y": 332
+    },
+    "802e2fd7-ec30-484d-9551-0d9dcaaab82e": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ok": "fad04aa1-48dd-4518-8e0a-0a102f24876b"
+      },
+      "displayName": "Email Suspend ",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 752.015625,
+      "y": 242.5390625
+    },
+    "998852b9-8562-402a-9a46-53e714152cbd": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Increment Login Count",
+      "nodeType": "IncrementLoginCountNode",
+      "x": 1298,
+      "y": 66
+    },
+    "fad04aa1-48dd-4518-8e0a-0a102f24876b": {
+      "connections": {
+        "error": "998852b9-8562-402a-9a46-53e714152cbd",
+        "ok": "998852b9-8562-402a-9a46-53e714152cbd"
+      },
+      "displayName": "Email Verification Flag",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1060.015625,
+      "y": 218.5390625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1506,
+      "y": 236
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1384,
+      "y": 500
+    },
+    "startNode": {
+      "x": 50,
+      "y": 25
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Registration\"]"
+  }
+}

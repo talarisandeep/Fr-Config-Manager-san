@@ -1,0 +1,26 @@
+{
+  "_id": "b21c2268-5cc3-4c48-904c-0faf747eb937",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-886597778",
+  "_type": {
+    "_id": "MessageNode",
+    "collection": true,
+    "name": "Message Node"
+  },
+  "message": {
+    "en": "Click Login to Continue"
+  },
+  "messageNo": {},
+  "messageYes": {
+    "en": "Login"
+  }
+}

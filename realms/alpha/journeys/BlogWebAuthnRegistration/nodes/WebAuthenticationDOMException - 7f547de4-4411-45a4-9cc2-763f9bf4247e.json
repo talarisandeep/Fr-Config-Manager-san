@@ -1,0 +1,80 @@
+{
+  "_id": "7f547de4-4411-45a4-9cc2-763f9bf4247e",
+  "_outcomes": [
+    {
+      "displayName": "NotAllowedError",
+      "id": "NotAllowedError"
+    },
+    {
+      "displayName": "SecurityError",
+      "id": "SecurityError"
+    },
+    {
+      "displayName": "AbortError",
+      "id": "AbortError"
+    },
+    {
+      "displayName": "NotSupportedError",
+      "id": "NotSupportedError"
+    },
+    {
+      "displayName": "InvalidStateError",
+      "id": "InvalidStateError"
+    },
+    {
+      "displayName": "UnknownError",
+      "id": "UnknownError"
+    },
+    {
+      "displayName": "NetworkError",
+      "id": "NetworkError"
+    },
+    {
+      "displayName": "TimeoutError",
+      "id": "TimeoutError"
+    },
+    {
+      "displayName": "EncodingError",
+      "id": "EncodingError"
+    },
+    {
+      "displayName": "ConstraintError",
+      "id": "ConstraintError"
+    },
+    {
+      "displayName": "DataError",
+      "id": "DataError"
+    },
+    {
+      "displayName": "TypeError",
+      "id": "TypeError"
+    }
+  ],
+  "_rev": "-1151312609",
+  "_type": {
+    "_id": "ScriptedDecisionNode",
+    "collection": true,
+    "name": "Scripted Decision"
+  },
+  "inputs": [
+    "*"
+  ],
+  "outcomes": [
+    "NotAllowedError",
+    "SecurityError",
+    "AbortError",
+    "NotSupportedError",
+    "InvalidStateError",
+    "UnknownError",
+    "NetworkError",
+    "TimeoutError",
+    "EncodingError",
+    "ConstraintError",
+    "DataError",
+    "TypeError"
+  ],
+  "outputs": [
+    "*"
+  ],
+  "script": "01a040f7-1458-4a56-807a-71c4cde29b8f"
+}

@@ -1,0 +1,19 @@
+{
+  "_id": "1cd1f913-83a5-4b06-b413-399d9c053809",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-2138757912",
+  "_type": {
+    "_id": "KbaCreateNode",
+    "collection": true,
+    "name": "KBA Definition"
+  },
+  "allowUserDefinedQuestions": true,
+  "message": {
+    "en": "Select a security question"
+  }
+}

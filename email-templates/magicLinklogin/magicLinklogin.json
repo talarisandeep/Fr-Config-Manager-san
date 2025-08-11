@@ -1,0 +1,27 @@
+{
+  "_id": "emailTemplate/magicLinklogin",
+  "defaultLocale": "en",
+  "description": "Login Link",
+  "displayName": "magicLinklogin",
+  "enabled": true,
+  "from": "\"Informa-PingOne Advanced Identity Cloud\" <noreply@openam-informa-trial.forgeblocks.com>",
+  "html": {
+    "en": {
+      "file": "magicLinklogin.en.html"
+    }
+  },
+  "message": {
+    "en": {
+      "file": "magicLinklogin.en.md"
+    }
+  },
+  "mimeType": "text/html",
+  "name": "magicLink",
+  "styles": {
+    "file": "magicLinklogin.css"
+  },
+  "subject": {
+    "en": "Welcome to Login Email."
+  },
+  "templateId": "magicLinklogin"
+}

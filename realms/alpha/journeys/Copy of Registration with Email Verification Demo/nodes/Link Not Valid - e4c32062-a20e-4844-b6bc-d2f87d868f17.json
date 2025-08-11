@@ -1,0 +1,31 @@
+{
+  "_id": "e4c32062-a20e-4844-b6bc-d2f87d868f17",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-1505246652",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "b21c2268-5cc3-4c48-904c-0faf747eb937",
+      "displayName": "Login",
+      "nodeType": "MessageNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {
+    "en": "Already Verified"
+  },
+  "stage": "{\"ConfirmationCallback\":[{\"id\":\"0c859395-4429-4e39-8c70-0d7359aa9932\",\"showOnlyPositiveAnswer\":true,\"showButtonsAsLinks\":true}]}"
+}

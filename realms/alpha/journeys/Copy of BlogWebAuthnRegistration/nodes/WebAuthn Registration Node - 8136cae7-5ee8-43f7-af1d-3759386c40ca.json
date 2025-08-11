@@ -1,0 +1,54 @@
+{
+  "_id": "8136cae7-5ee8-43f7-af1d-3759386c40ca",
+  "_outcomes": [
+    {
+      "displayName": "Unsupported",
+      "id": "unsupported"
+    },
+    {
+      "displayName": "Success",
+      "id": "success"
+    },
+    {
+      "displayName": "Failure",
+      "id": "failure"
+    },
+    {
+      "displayName": "Client Error",
+      "id": "error"
+    }
+  ],
+  "_rev": "-139274997",
+  "_type": {
+    "_id": "WebAuthnRegistrationNode",
+    "collection": true,
+    "name": "WebAuthn Registration Node"
+  },
+  "acceptedSigningAlgorithms": [
+    "ES256",
+    "RS256"
+  ],
+  "asScript": false,
+  "attestationPreference": "NONE",
+  "authenticatorAttachment": "UNSPECIFIED",
+  "displayNameSharedState": "displayName",
+  "enforceRevocationCheck": false,
+  "excludeCredentials": false,
+  "fidoCertificationLevel": "OFF",
+  "generateRecoveryCodes": true,
+  "maxSavedDevices": 0,
+  "origins": [
+    "https://openam-sdks.forgeblocks.com/",
+    "https://idc.petrov.ca/",
+    "ios:bundle-id:com.forgerock.unsummit"
+  ],
+  "postponeDeviceProfileStorage": false,
+  "relyingPartyDomain": "idc.petrov.ca",
+  "relyingPartyName": "ForgeRock",
+  "requiresResidentKey": false,
+  "storeAttestationDataInTransientState": false,
+  "timeout": 60,
+  "trustStoreAlias": "trustalias",
+  "userVerificationRequirement": "DISCOURAGED",
+  "validateFidoU2fAaguid": true
+}

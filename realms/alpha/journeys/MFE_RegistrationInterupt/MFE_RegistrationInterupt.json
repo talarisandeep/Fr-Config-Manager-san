@@ -1,0 +1,77 @@
+{
+  "_id": "MFE_RegistrationInterupt",
+  "_rev": "-644248335",
+  "description": "Platform Registration Tree",
+  "enabled": true,
+  "entryNodeId": "0ae7df02-e3a2-44d0-aaf1-917ee0a0498b",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "nodes": {
+    "0ae7df02-e3a2-44d0-aaf1-917ee0a0498b": {
+      "connections": {
+        "outcome": "b350ea2c-755d-4099-b6f1-3c7d9a78fc02"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 184,
+      "y": 172
+    },
+    "2a2528aa-b56a-477c-8e55-aff25d2b6183": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Increment Login Count",
+      "nodeType": "IncrementLoginCountNode",
+      "x": 1164,
+      "y": 152
+    },
+    "4deaf12b-600d-4c29-b678-d769515e417b": {
+      "connections": {
+        "CREATED": "68c6934f-9a9e-4e3f-b206-8ca60949c7b5",
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Create Object",
+      "nodeType": "CreateObjectNode",
+      "x": 806.015625,
+      "y": 359.5390625
+    },
+    "68c6934f-9a9e-4e3f-b206-8ca60949c7b5": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ok": "2a2528aa-b56a-477c-8e55-aff25d2b6183"
+      },
+      "displayName": "Scripted Decision",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1156.015625,
+      "y": 458.5390625
+    },
+    "b350ea2c-755d-4099-b6f1-3c7d9a78fc02": {
+      "connections": {
+        "false": "4deaf12b-600d-4c29-b678-d769515e417b",
+        "true": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Identify Existing User",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 501.015625,
+      "y": 203.5390625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1564,
+      "y": 138
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1592,
+      "y": 312
+    },
+    "startNode": {
+      "x": 50,
+      "y": 25
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Registration\"]"
+  }
+}

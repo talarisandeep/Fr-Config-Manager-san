@@ -1,0 +1,26 @@
+{
+  "_id": "emailTemplate/magicLink",
+  "defaultLocale": "en",
+  "description": "Registration Verification Link",
+  "displayName": "magicLink",
+  "enabled": true,
+  "from": "\"Informa-PingOne Advanced Identity Cloud\" <noreply@openam-informa-trial.forgeblocks.com>",
+  "html": {
+    "en": {
+      "file": "magicLink.en.html"
+    }
+  },
+  "message": {
+    "en": {
+      "file": "magicLink.en.md"
+    }
+  },
+  "mimeType": "text/html",
+  "styles": {
+    "file": "magicLink.css"
+  },
+  "subject": {
+    "en": "This is your registration email."
+  },
+  "templateId": "magicLink"
+}

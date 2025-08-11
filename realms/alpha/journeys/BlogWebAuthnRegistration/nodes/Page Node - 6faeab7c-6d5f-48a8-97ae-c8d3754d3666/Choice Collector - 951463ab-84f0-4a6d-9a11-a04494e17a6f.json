@@ -1,0 +1,30 @@
+{
+  "_id": "951463ab-84f0-4a6d-9a11-a04494e17a6f",
+  "_outcomes": [
+    {
+      "displayName": "Register new passkey",
+      "id": "Register new passkey"
+    },
+    {
+      "displayName": "use magic link",
+      "id": "use magic link"
+    },
+    {
+      "displayName": "use another passkey",
+      "id": "use another passkey"
+    }
+  ],
+  "_rev": "611251609",
+  "_type": {
+    "_id": "ChoiceCollectorNode",
+    "collection": true,
+    "name": "Choice Collector"
+  },
+  "choices": [
+    "Register new passkey",
+    "use magic link",
+    "use another passkey"
+  ],
+  "defaultChoice": "5",
+  "prompt": "5"
+}

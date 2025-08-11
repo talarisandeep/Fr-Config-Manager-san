@@ -1,0 +1,130 @@
+{
+  "_id": "Copy of Registration with Email Verification Demo",
+  "_rev": "-1220538142",
+  "enabled": true,
+  "entryNodeId": "4456ccd9-bd8d-4cc0-a92f-f0b65c512210",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "nodes": {
+    "0643094d-cc93-4a35-ae71-e4fdf8258a31": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Inner Tree Evaluator",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 1313.015625,
+      "y": 213.5390625
+    },
+    "278720bc-e444-4b36-b4b9-da69ee6d9580": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ok": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Send Email",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1546.125,
+      "y": 545.91796875
+    },
+    "34b1d922-44c2-4969-97ec-6570df2a716a": {
+      "connections": {
+        "CREATED": "bad0cdab-0599-4cef-86ca-46bcf74a42f5",
+        "FAILURE": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Create User",
+      "nodeType": "CreateObjectNode",
+      "x": 768.1111145019531,
+      "y": 523.25
+    },
+    "3bdf7d68-3711-421e-9f97-c823e3a0b5b5": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ok": "278720bc-e444-4b36-b4b9-da69ee6d9580"
+      },
+      "displayName": "Create Verification Code",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1236.125,
+      "y": 535.91796875
+    },
+    "4456ccd9-bd8d-4cc0-a92f-f0b65c512210": {
+      "connections": {
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "expired": "b60e55b2-e17c-4d60-bbca-efaf9c1538b9",
+        "invalid": "e4c32062-a20e-4844-b6bc-d2f87d868f17",
+        "notPresent": "dd5cf68b-4992-4045-87c7-a8a9fb22d2d8",
+        "valid": "d9911026-698b-485e-8561-83129727728e"
+      },
+      "displayName": "Verification Code",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 202,
+      "y": 36.25
+    },
+    "b60e55b2-e17c-4d60-bbca-efaf9c1538b9": {
+      "connections": {
+        "true": "3bdf7d68-3711-421e-9f97-c823e3a0b5b5"
+      },
+      "displayName": "Link Expired",
+      "nodeType": "PageNode",
+      "x": 488.75,
+      "y": 261.91796875
+    },
+    "bad0cdab-0599-4cef-86ca-46bcf74a42f5": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "3bdf7d68-3711-421e-9f97-c823e3a0b5b5"
+      },
+      "displayName": "Set Userid",
+      "nodeType": "IdentifyExistingUserNode",
+      "x": 978,
+      "y": 530.25
+    },
+    "d9911026-698b-485e-8561-83129727728e": {
+      "connections": {
+        "alreadyVerified": "e4c32062-a20e-4844-b6bc-d2f87d868f17",
+        "error": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ok": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Set Email Verified",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 423,
+      "y": 39.25
+    },
+    "dd5cf68b-4992-4045-87c7-a8a9fb22d2d8": {
+      "connections": {
+        "outcome": "34b1d922-44c2-4969-97ec-6570df2a716a"
+      },
+      "displayName": "Details",
+      "nodeType": "PageNode",
+      "x": 480,
+      "y": 529.25
+    },
+    "e4c32062-a20e-4844-b6bc-d2f87d868f17": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "0643094d-cc93-4a35-ae71-e4fdf8258a31"
+      },
+      "displayName": "Link Not Valid",
+      "nodeType": "PageNode",
+      "x": 798.4444580078125,
+      "y": 212.25
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1818,
+      "y": 98
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1812,
+      "y": 748
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Registration\",\"demo\"]"
+  }
+}

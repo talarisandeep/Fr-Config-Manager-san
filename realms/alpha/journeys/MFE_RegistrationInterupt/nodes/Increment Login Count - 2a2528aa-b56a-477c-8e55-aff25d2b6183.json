@@ -1,0 +1,16 @@
+{
+  "_id": "2a2528aa-b56a-477c-8e55-aff25d2b6183",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-1919860555",
+  "_type": {
+    "_id": "IncrementLoginCountNode",
+    "collection": true,
+    "name": "Increment Login Count"
+  },
+  "identityAttribute": "userName"
+}

@@ -1,0 +1,33 @@
+{
+  "_id": "8fb91079-5934-46c3-8c41-09718e0533b5",
+  "_outcomes": [
+    {
+      "displayName": "Use Magic Link",
+      "id": "Use Magic Link"
+    },
+    {
+      "displayName": "Use Alternate PassKey",
+      "id": "Use Alternate PassKey"
+    },
+    {
+      "displayName": "Register New PassKey",
+      "id": "Register New PassKey"
+    }
+  ],
+  "_rev": "-424547338",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "03595f51-192c-474f-98fe-e1bf50a97741",
+      "displayName": "Choice Collector",
+      "nodeType": "ChoiceCollectorNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {},
+  "stage": "{\"ChoiceCallback\":[{\"id\":\"951463ab-84f0-4a6d-9a11-a04494e17a6f\",\"displayType\":\"radio\"},{\"id\":\"03595f51-192c-474f-98fe-e1bf50a97741\",\"displayType\":\"radio\"}]}"
+}

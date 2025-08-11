@@ -1,0 +1,31 @@
+{
+  "_id": "dd5cf68b-4992-4045-87c7-a8a9fb22d2d8",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "1924296323",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "210f1eb0-c801-4dcd-894e-f44da2d7af1d",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "19c7b271-9d31-422a-828d-971b26e24efb",
+      "displayName": "Details",
+      "nodeType": "AttributeCollectorNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {
+    "en": "Email Address"
+  }
+}

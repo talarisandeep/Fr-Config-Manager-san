@@ -1,0 +1,30 @@
+{
+  "_id": "b60e55b2-e17c-4d60-bbca-efaf9c1538b9",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "35301698",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "fc35f4a9-7cb9-49ef-9c51-994a16b8eb4d",
+      "displayName": "Resend",
+      "nodeType": "MessageNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {
+    "en": "The link has expired"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "_id": "80313673-64d7-4da2-b009-f3fc3b64d548",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-726183287",
+  "_type": {
+    "_id": "SessionDataNode",
+    "collection": true,
+    "name": "Get Session Data"
+  },
+  "sessionDataKey": "UserToken",
+  "sharedStateKey": "userName"
+}

@@ -1,0 +1,24 @@
+{
+  "_id": "bb103d5c-e790-4452-93c7-df896d286cde",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "2008537788",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "9c71dbf2-aaeb-4495-8241-3fea1a96faa4",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

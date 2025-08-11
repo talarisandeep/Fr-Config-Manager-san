@@ -1,0 +1,48 @@
+{
+  "_id": "daf221b5-2222-4be2-b5f5-6553deb72f01",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-1124114707",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "122fd4de-be95-49f9-9e30-5467b04a5c58",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "29f31059-25a3-4aba-93b2-a546b0de8413",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    },
+    {
+      "_id": "9ec666b3-a5bd-43c0-9b1e-d64d99816a81",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    },
+    {
+      "_id": "1cd1f913-83a5-4b06-b413-399d9c053809",
+      "displayName": "KBA Definition",
+      "nodeType": "KbaCreateNode"
+    },
+    {
+      "_id": "00aea8e5-bacd-45e6-acc7-ee51b595e4bb",
+      "displayName": "Accept Terms and Conditions",
+      "nodeType": "AcceptTermsAndConditionsNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "Signing up is fast and easy.<br>Already have an account? <a href='#/service/Login'>Sign In</a>"
+  },
+  "pageHeader": {
+    "en": "Sign Up"
+  }
+}

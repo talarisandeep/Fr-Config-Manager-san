@@ -1,0 +1,20 @@
+{
+  "_id": "0643094d-cc93-4a35-ae71-e4fdf8258a31",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-1037968541",
+  "_type": {
+    "_id": "InnerTreeEvaluatorNode",
+    "collection": true,
+    "name": "Inner Tree Evaluator"
+  },
+  "tree": "Login Demo"
+}

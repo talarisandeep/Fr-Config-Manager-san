@@ -1,0 +1,20 @@
+{
+  "_id": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-416253027",
+  "_type": {
+    "_id": "InnerTreeEvaluatorNode",
+    "collection": true,
+    "name": "Inner Tree Evaluator"
+  },
+  "tree": "BlogWebAuthnRegistration"
+}

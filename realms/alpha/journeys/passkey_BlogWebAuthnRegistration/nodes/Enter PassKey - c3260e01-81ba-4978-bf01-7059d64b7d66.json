@@ -1,0 +1,15 @@
+{
+  "_id": "c3260e01-81ba-4978-bf01-7059d64b7d66",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "423210162",
+  "_type": {
+    "_id": "PasswordCollectorNode",
+    "collection": true,
+    "name": "Password Collector"
+  }
+}

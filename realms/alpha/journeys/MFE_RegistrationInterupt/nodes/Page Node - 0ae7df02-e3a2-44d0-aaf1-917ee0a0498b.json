@@ -1,0 +1,33 @@
+{
+  "_id": "0ae7df02-e3a2-44d0-aaf1-917ee0a0498b",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "218176437",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "220c5760-5fb6-4cfd-998a-2200882f1f42",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "7efa480f-8d73-4986-9920-f57802889121",
+      "displayName": "Attribute Collector",
+      "nodeType": "AttributeCollectorNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "Signing up is fast and easy.<br>Already have an account? <a href='#/service/Login'>Sign In</a>"
+  },
+  "pageHeader": {
+    "en": "Sign Up"
+  }
+}

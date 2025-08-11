@@ -1,0 +1,33 @@
+{
+  "_id": "6faeab7c-6d5f-48a8-97ae-c8d3754d3666",
+  "_outcomes": [
+    {
+      "displayName": "Register new passkey",
+      "id": "Register new passkey"
+    },
+    {
+      "displayName": "use magic link",
+      "id": "use magic link"
+    },
+    {
+      "displayName": "use another passkey",
+      "id": "use another passkey"
+    }
+  ],
+  "_rev": "977698987",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "951463ab-84f0-4a6d-9a11-a04494e17a6f",
+      "displayName": "Choice Collector",
+      "nodeType": "ChoiceCollectorNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {},
+  "stage": "{\"ChoiceCallback\":[{\"id\":\"951463ab-84f0-4a6d-9a11-a04494e17a6f\",\"displayType\":\"radio\"}]}"
+}

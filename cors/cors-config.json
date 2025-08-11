@@ -1,0 +1,74 @@
+{
+  "corsServiceGlobal": {
+    "_id": "",
+    "_rev": "515901845",
+    "_type": {
+      "_id": "CorsService",
+      "collection": false,
+      "name": "CORS Service"
+    },
+    "enabled": true
+  },
+  "corsServices": [
+    {
+      "_id": "Pingsdk",
+      "_type": {
+        "_id": "configuration",
+        "collection": true,
+        "name": "Cors Configuration"
+      },
+      "acceptedHeaders": [
+        "accept-api-version",
+        "x-requested-with",
+        "content-type",
+        "authorization"
+      ],
+      "acceptedMethods": [
+        "POST",
+        "GET",
+        "PATCH",
+        "DELETE",
+        "PUT",
+        "OPTIONS"
+      ],
+      "acceptedOrigins": [
+        "https://localhost:8443",
+        "https://localhost:8443/",
+        "https://hello.example.com:8443/",
+        "https://hello.test.com:8443/",
+        "https://iso-imn.pages.dev",
+        "https://sr.oneinforma.com",
+        "https://openam-informa-oneinforma-dev.id.forgerock.io",
+        "https://localhost:8444/"
+      ],
+      "allowCredentials": true,
+      "enabled": true,
+      "exposedHeaders": [
+        "accept-api-version",
+        "content-type",
+        "x-requested-with",
+        "authorization",
+        "X-OpenAM-Username",
+        "iPlanetDirectoryPro",
+        "accept",
+        "X-OpenAM-Password",
+        "if-match"
+      ],
+      "maxAge": 0
+    }
+  ],
+  "idmCorsConfig": {
+    "_id": "servletfilter/cors",
+    "initParams": {
+      "allowCredentials": false,
+      "allowedHeaders": "authorization,accept,content-type,origin,x-requested-with,cache-control,accept-api-version,if-match,if-none-match",
+      "allowedMethods": "GET,POST,PUT,DELETE,PATCH",
+      "allowedOrigins": "*",
+      "chainPreflight": false,
+      "exposedHeaders": "WWW-Authenticate"
+    },
+    "urlPatterns": [
+      "/*"
+    ]
+  }
+}

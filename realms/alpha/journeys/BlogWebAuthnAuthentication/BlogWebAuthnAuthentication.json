@@ -1,0 +1,80 @@
+{
+  "_id": "BlogWebAuthnAuthentication",
+  "_rev": "1140723372",
+  "enabled": true,
+  "entryNodeId": "818412de-5831-4dfd-845c-26b316d28cfc",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "nodes": {
+    "233b8fd1-37f5-440c-9489-8681200c79dd": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Device Registration Tree",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 1121,
+      "y": 107.015625
+    },
+    "6b6f9274-3a25-4e0f-91ef-3f985fc433a8": {
+      "connections": {
+        "AbortError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "ConstraintError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "DataError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "EncodingError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "InvalidStateError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "NetworkError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "NotAllowedError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "NotSupportedError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "SecurityError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "TimeoutError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "TypeError": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "UnknownError": "233b8fd1-37f5-440c-9489-8681200c79dd"
+      },
+      "displayName": "WebAuthenticationDOMException",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 685,
+      "y": 237.015625
+    },
+    "818412de-5831-4dfd-845c-26b316d28cfc": {
+      "connections": {
+        "outcome": "9d364b75-cbab-4c4e-ab85-bc659fbc70b1"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 131,
+      "y": 89.015625
+    },
+    "9d364b75-cbab-4c4e-ab85-bc659fbc70b1": {
+      "connections": {
+        "error": "6b6f9274-3a25-4e0f-91ef-3f985fc433a8",
+        "failure": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "noDevice": "233b8fd1-37f5-440c-9489-8681200c79dd",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "unsupported": "233b8fd1-37f5-440c-9489-8681200c79dd"
+      },
+      "displayName": "WebAuthn Authentication Node",
+      "nodeType": "WebAuthnAuthenticationNode",
+      "x": 356,
+      "y": 26.015625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1391,
+      "y": 28
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1384,
+      "y": 171
+    },
+    "startNode": {
+      "x": 19,
+      "y": 81
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Docs\"]"
+  }
+}

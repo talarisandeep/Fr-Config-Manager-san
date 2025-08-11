@@ -1,0 +1,157 @@
+{
+  "_id": "passkey_BlogWebAuthnRegistration",
+  "_rev": "-1989695882",
+  "enabled": true,
+  "entryNodeId": "e0092f63-6659-403e-af34-4bd412bfa989",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "nodes": {
+    "10e3cc3d-a4c2-4f89-a356-7036d5e9b670": {
+      "connections": {},
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 892,
+      "y": 350.015625
+    },
+    "1da8c14e-6a6b-4c9e-ab08-19acf2330653": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "fc7b0325-27ee-46c7-a101-9f3358f0da6c"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 851.0173611111112,
+      "y": 71.265625
+    },
+    "2c81a424-9d56-4f8f-ab49-c630fc9dd12d": {
+      "connections": {
+        "false": "b04aaf4f-125e-4208-bf05-559012a048c7",
+        "true": "b04aaf4f-125e-4208-bf05-559012a048c7"
+      },
+      "displayName": "SharedStateHasUsername",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 336,
+      "y": 484.015625
+    },
+    "80313673-64d7-4da2-b009-f3fc3b64d548": {
+      "connections": {
+        "outcome": "8fb91079-5934-46c3-8c41-09718e0533b5"
+      },
+      "displayName": "Get Session Data",
+      "nodeType": "SessionDataNode",
+      "x": 319,
+      "y": 6.015625
+    },
+    "89eeb3d5-2084-47d5-b875-0d7895c6569e": {
+      "connections": {
+        "AbortError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ConstraintError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "DataError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "EncodingError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "InvalidStateError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "NetworkError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "NotAllowedError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "NotSupportedError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "SecurityError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "TimeoutError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "TypeError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "UnknownError": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "WebAuthenticationDOMException",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1496,
+      "y": 260.015625
+    },
+    "8fb91079-5934-46c3-8c41-09718e0533b5": {
+      "connections": {
+        "Register New PassKey": "c3260e01-81ba-4978-bf01-7059d64b7d66",
+        "Use Alternate PassKey": "907f3a4c-f91a-4bd6-b0a5-d62d7c364dde",
+        "Use Magic Link": "10e3cc3d-a4c2-4f89-a356-7036d5e9b670"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 434,
+      "y": 181.015625
+    },
+    "907f3a4c-f91a-4bd6-b0a5-d62d7c364dde": {
+      "connections": {
+        "error": "89eeb3d5-2084-47d5-b875-0d7895c6569e",
+        "failure": "89eeb3d5-2084-47d5-b875-0d7895c6569e",
+        "noDevice": "fc7b0325-27ee-46c7-a101-9f3358f0da6c",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "unsupported": "89eeb3d5-2084-47d5-b875-0d7895c6569e"
+      },
+      "displayName": "WebAuthn Authentication Node",
+      "nodeType": "WebAuthnAuthenticationNode",
+      "x": 974,
+      "y": 615.015625
+    },
+    "a7ddbd12-47db-4c57-97f5-79adad0fd066": {
+      "connections": {
+        "true": "fc7b0325-27ee-46c7-a101-9f3358f0da6c"
+      },
+      "displayName": "userUUIDtoDisplayName",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1101,
+      "y": 311.015625
+    },
+    "b04aaf4f-125e-4208-bf05-559012a048c7": {
+      "connections": {
+        "outcome": "8fb91079-5934-46c3-8c41-09718e0533b5"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 698,
+      "y": 503.015625
+    },
+    "c3260e01-81ba-4978-bf01-7059d64b7d66": {
+      "connections": {
+        "outcome": "1da8c14e-6a6b-4c9e-ab08-19acf2330653"
+      },
+      "displayName": "Enter PassKey",
+      "nodeType": "PasswordCollectorNode",
+      "x": 565.90625,
+      "y": 59.59895833333337
+    },
+    "e0092f63-6659-403e-af34-4bd412bfa989": {
+      "connections": {
+        "hasSession": "80313673-64d7-4da2-b009-f3fc3b64d548",
+        "noSession": "2c81a424-9d56-4f8f-ab49-c630fc9dd12d"
+      },
+      "displayName": "HasSession",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 123,
+      "y": 229.015625
+    },
+    "fc7b0325-27ee-46c7-a101-9f3358f0da6c": {
+      "connections": {
+        "error": "89eeb3d5-2084-47d5-b875-0d7895c6569e",
+        "failure": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "unsupported": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "WebAuthn Registration Node",
+      "nodeType": "WebAuthnRegistrationNode",
+      "x": 1276,
+      "y": 26.015625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1846,
+      "y": 52
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1847,
+      "y": 175
+    },
+    "startNode": {
+      "x": 32,
+      "y": 246
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Docs\",\"Registration\",\"Login\"]"
+  }
+}

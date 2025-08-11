@@ -1,0 +1,24 @@
+{
+  "_id": "604d6d84-101f-4817-86d6-b4b75c51f0ac",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "280990874",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "2d3cddb7-4299-4727-9c8a-08688cd93a64",
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode"
+    }
+  ],
+  "pageDescription": {},
+  "pageHeader": {}
+}

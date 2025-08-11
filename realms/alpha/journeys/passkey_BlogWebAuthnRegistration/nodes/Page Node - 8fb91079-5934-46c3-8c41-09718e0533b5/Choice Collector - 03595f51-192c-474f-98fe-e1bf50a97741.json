@@ -1,0 +1,30 @@
+{
+  "_id": "03595f51-192c-474f-98fe-e1bf50a97741",
+  "_outcomes": [
+    {
+      "displayName": "Use Magic Link",
+      "id": "Use Magic Link"
+    },
+    {
+      "displayName": "Use Alternate PassKey",
+      "id": "Use Alternate PassKey"
+    },
+    {
+      "displayName": "Register New PassKey",
+      "id": "Register New PassKey"
+    }
+  ],
+  "_rev": "-1054474682",
+  "_type": {
+    "_id": "ChoiceCollectorNode",
+    "collection": true,
+    "name": "Choice Collector"
+  },
+  "choices": [
+    "Use Magic Link",
+    "Use Alternate PassKey",
+    "Register New PassKey"
+  ],
+  "defaultChoice": "12345",
+  "prompt": "Please select an appropriate option"
+}

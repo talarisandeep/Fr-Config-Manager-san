@@ -1,0 +1,144 @@
+{
+  "_id": "Copy of BlogWebAuthnRegistration",
+  "_rev": "1603142525",
+  "enabled": true,
+  "entryNodeId": "b5333108-a834-4811-aff6-61719546c19c",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "nodes": {
+    "081c5d98-995e-4cf4-868c-5ee68c48e005": {
+      "connections": {
+        "outcome": "1837feaa-0318-4441-8300-2892cffc059b"
+      },
+      "displayName": "Get Session Data",
+      "nodeType": "SessionDataNode",
+      "x": 323,
+      "y": 151.015625
+    },
+    "1837feaa-0318-4441-8300-2892cffc059b": {
+      "connections": {
+        "outcome": "34647798-d4bb-4d88-a29d-766dd123e218"
+      },
+      "displayName": "Password Collector",
+      "nodeType": "PasswordCollectorNode",
+      "x": 555,
+      "y": 151.015625
+    },
+    "2e00e08d-df2b-4922-8f02-754bea73cda6": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Display Username",
+      "nodeType": "DisplayUserNameNode",
+      "x": 1146,
+      "y": 289.015625
+    },
+    "2ebbb1ef-180d-4609-a340-14cbfd8f68ad": {
+      "connections": {
+        "AbortError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "ConstraintError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "DataError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "EncodingError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "InvalidStateError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "NetworkError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "NotAllowedError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "NotSupportedError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "SecurityError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "TimeoutError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "TypeError": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "UnknownError": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "WebAuthenticationDOMException",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 1496,
+      "y": 260.015625
+    },
+    "34647798-d4bb-4d88-a29d-766dd123e218": {
+      "connections": {
+        "outcome": "dc778b41-3ffb-423c-8200-875e8ea0e8a8"
+      },
+      "displayName": "Display Username",
+      "nodeType": "DisplayUserNameNode",
+      "x": 701,
+      "y": 66.015625
+    },
+    "8136cae7-5ee8-43f7-af1d-3759386c40ca": {
+      "connections": {
+        "error": "2ebbb1ef-180d-4609-a340-14cbfd8f68ad",
+        "failure": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "unsupported": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "WebAuthn Registration Node",
+      "nodeType": "WebAuthnRegistrationNode",
+      "x": 1227,
+      "y": 21.015625
+    },
+    "ad14c1ac-e1c6-4311-afd0-2a5e02d39c11": {
+      "connections": {
+        "outcome": "1837feaa-0318-4441-8300-2892cffc059b"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 595,
+      "y": 409.015625
+    },
+    "b5333108-a834-4811-aff6-61719546c19c": {
+      "connections": {
+        "hasSession": "081c5d98-995e-4cf4-868c-5ee68c48e005",
+        "noSession": "b5516bee-257e-42b9-b3d0-78cc6fd99736"
+      },
+      "displayName": "HasSession",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 123,
+      "y": 229.015625
+    },
+    "b5516bee-257e-42b9-b3d0-78cc6fd99736": {
+      "connections": {
+        "false": "ad14c1ac-e1c6-4311-afd0-2a5e02d39c11",
+        "true": "1837feaa-0318-4441-8300-2892cffc059b"
+      },
+      "displayName": "SharedStateHasUsername",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 309,
+      "y": 368.015625
+    },
+    "ba9be72f-21b6-4675-aef9-935982ad4386": {
+      "connections": {
+        "true": "8136cae7-5ee8-43f7-af1d-3759386c40ca"
+      },
+      "displayName": "userUUIDtoDisplayName",
+      "nodeType": "ScriptedDecisionNode",
+      "x": 958,
+      "y": 78.015625
+    },
+    "dc778b41-3ffb-423c-8200-875e8ea0e8a8": {
+      "connections": {
+        "false": "2e00e08d-df2b-4922-8f02-754bea73cda6",
+        "true": "ba9be72f-21b6-4675-aef9-935982ad4386"
+      },
+      "displayName": "Data Store Decision",
+      "nodeType": "DataStoreDecisionNode",
+      "x": 892,
+      "y": 263.015625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1846,
+      "y": 52
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1847,
+      "y": 175
+    },
+    "startNode": {
+      "x": 32,
+      "y": 246
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Docs\"]"
+  }
+}
