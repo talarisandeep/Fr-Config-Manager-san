@@ -1,0 +1,80 @@
+{
+  "passkey_journey": {
+    "type": "registration",
+    "steps": [
+      {
+        "step_id": "1",
+        "action": "user_initiates_registration",
+        "description": "User clicks 'Register' or similar button",
+        "input": {
+          "type": "username",
+          "required": true
+        },
+        "output": {
+          "type": "server_challenge",
+          "data_format": "JSON",
+          "example": "{ \"challenge\": \"...\", \"rp\": {...}, \"user\": {...}, \"pubKeyCredParams\": [...] }"
+        }
+      },
+      {
+        "step_id": "2",
+        "action": "device_handles_challenge",
+        "description": "Device receives challenge, generates key pair",
+        "input": {
+          "type": "server_challenge",
+          "data_format": "JSON",
+          "example": "{ \"challenge\": \"...\", \"rp\": {...}, \"user\": {...}, \"pubKeyCredParams\": [...] }"
+        },
+        "output": {
+          "type": "credential",
+          "data_format": "JSON",
+          "example": "{ \"id\": \"...\", \"rawId\": \"...\", \"response\": {...}, \"type\": \"public-key\" }"
+        }
+      },
+       {
+        "step_id": "3",
+        "action": "user_authenticates_with_biometrics",
+        "description": "User authenticates with device's security (e.g., fingerprint, PIN)",
+        "input": {
+          "type": "biometrics",
+          "required": true
+        },
+        "output": {
+          "type": "credential",
+          "data_format": "JSON",
+          "example": "{ \"id\": \"...\", \"rawId\": \"...\", \"response\": {...}, \"type\": \"public-key\" }"
+        }
+      },
+      {
+        "step_id": "4",
+        "action": "relying_party_verifies_credential",
+        "description": "Relying party verifies the credential against the public key",
+        "input": {
+          "type": "credential",
+          "data_format": "JSON",
+          "example": "{ \"id\": \"...\", \"rawId\": \"...\", \"response\": {...}, \"type\": \"public-key\" }"
+        },
+         "output": {
+          "type": "authentication_result",
+          "data_format": "boolean",
+          "example": "true"
+         }
+      },
+       {
+         "step_id": "5",
+         "action": "registration_success",
+         "description": "Relying party confirms successful registration",
+         "input": {
+           "type": "authentication_result",
+           "data_format": "boolean",
+           "example": "true"
+         },
+         "output": {
+           "type": "confirmation_message",
+           "data_format": "text",
+           "example": "Registration successful. You can now use your passkey."
+         }
+       }
+    ]
+  }
+}
