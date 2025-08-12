@@ -1,0 +1,17 @@
+{
+  "_id": "f1337a34-0254-45e3-a1f7-6d16da2de471",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "935590136",
+  "_type": {
+    "_id": "ValidatedUsernameNode",
+    "collection": true,
+    "name": "Platform Username"
+  },
+  "usernameAttribute": "userName",
+  "validateInput": false
+}
