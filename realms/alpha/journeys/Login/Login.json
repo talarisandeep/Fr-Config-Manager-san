@@ -1,12 +1,13 @@
 {
   "_id": "Login",
-  "_rev": "-453684268",
+  "_rev": "2122881300",
   "description": "Platform Login Tree",
   "enabled": true,
   "entryNodeId": "a12bc72f-ad97-4f1e-a789-a1fa3dd566c8",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "2119f332-0f69-4088-a7a1-6582bf0f2001": {
       "connections": {

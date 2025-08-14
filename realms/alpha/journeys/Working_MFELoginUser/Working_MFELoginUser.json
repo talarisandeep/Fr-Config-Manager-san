@@ -1,11 +1,12 @@
 {
   "_id": "Working_MFELoginUser",
-  "_rev": "856368202",
+  "_rev": "-862033526",
   "enabled": true,
   "entryNodeId": "bb103d5c-e790-4452-93c7-df896d286cde",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "36b8ed90-ecb3-486a-b7c3-553ab0c3e50e": {
       "connections": {

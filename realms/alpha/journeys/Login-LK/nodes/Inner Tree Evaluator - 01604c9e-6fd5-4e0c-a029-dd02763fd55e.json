@@ -1,0 +1,21 @@
+{
+  "_id": "01604c9e-6fd5-4e0c-a029-dd02763fd55e",
+  "_outcomes": [
+    {
+      "displayName": "True",
+      "id": "true"
+    },
+    {
+      "displayName": "False",
+      "id": "false"
+    }
+  ],
+  "_rev": "-1499288394",
+  "_type": {
+    "_id": "InnerTreeEvaluatorNode",
+    "collection": true,
+    "name": "Inner Tree Evaluator"
+  },
+  "displayErrorOutcome": false,
+  "tree": "ProgressiveProfile"
+}

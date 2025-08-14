@@ -1,6 +1,6 @@
 {
   "_id": "",
-  "_rev": "-858631753",
+  "_rev": "-1262777215",
   "_type": {
     "_id": "EMPTY",
     "collection": false,
@@ -17,7 +17,7 @@
   },
   "core": {
     "adminAuthModule": "Login",
-    "orgConfig": "Login"
+    "orgConfig": "Login-LK"
   },
   "general": {
     "defaultAuthLevel": 0,

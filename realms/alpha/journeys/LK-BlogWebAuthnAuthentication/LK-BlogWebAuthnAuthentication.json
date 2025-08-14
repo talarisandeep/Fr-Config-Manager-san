@@ -1,243 +1,64 @@
 {
   "_id": "LK-BlogWebAuthnAuthentication",
-  "_rev": "33131564",
+  "_rev": "-127205370",
   "enabled": true,
   "entryNodeId": "3677c390-cd07-4745-832c-14acccb981c7",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
-    "0433fd45-1c4d-4f7d-9bcf-50206f130c42": {
-      "connections": {
-        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "10172f63-8b7f-4474-8ffa-ace0ddf1ae20": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "1a762c1d-0a76-4e46-ad81-d2b816a81078": {
-      "connections": {
-        "outcome": "f14894cf-a1b7-4ce2-a96d-c3503e5c91dc"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "2190ba35-eeaa-4794-b783-2c3f46c4eebf": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "26f443b4-95b9-445b-9ac0-99d9fff068f4": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
     "3677c390-cd07-4745-832c-14acccb981c7": {
       "connections": {
-        "outcome": "60ab5f5d-59f8-424e-818c-bb477b379a35"
+        "outcome": "909ea19f-afb4-4c29-b917-8cecf47e0401"
       },
       "displayName": "Username Collector",
       "nodeType": "UsernameCollectorNode",
       "x": 131,
       "y": 89.015625
     },
-    "3e3ef555-bf62-41bf-96bb-af3bee50e09e": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "40bb1c1c-b1c4-42f4-a3ab-95ae3a900765": {
-      "connections": {
-        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "4177fb2c-b1fe-4a8a-9d5e-1cb30c3ff95c": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "47dde40d-96d1-4f36-8a21-bd55a646ad28": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "546caa8f-09ac-488f-b953-765746409938": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "60ab5f5d-59f8-424e-818c-bb477b379a35": {
-      "connections": {
-        "outcome": "909ea19f-afb4-4c29-b917-8cecf47e0401"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
     "909ea19f-afb4-4c29-b917-8cecf47e0401": {
       "connections": {
-        "error": "1a762c1d-0a76-4e46-ad81-d2b816a81078",
-        "failure": "4177fb2c-b1fe-4a8a-9d5e-1cb30c3ff95c",
-        "noDevice": "dae291ea-721a-4a54-8e1b-1b4d649fd535",
-        "success": "d235b99d-8335-4f03-95f2-5f72dfa95378",
-        "unsupported": "ff5773a9-7185-4150-a1f9-ac960aa3acc7"
+        "error": "f14894cf-a1b7-4ce2-a96d-c3503e5c91dc",
+        "failure": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "noDevice": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "success": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0",
+        "unsupported": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
       },
       "displayName": "WebAuthn Authentication Node",
       "nodeType": "WebAuthnAuthenticationNode",
       "x": 356,
       "y": 25.015625
     },
-    "9a1e8296-ce79-41c9-926b-8f2676d8f91e": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "9c9d3d75-9b70-4be5-be6b-de4ec93bddf3": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "a60bf310-175b-4b21-a2e4-af651ad93a8b": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "a7a4116e-d481-4f57-aab7-4ee3acc8fc5f": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
     "c17868e4-23e4-49c4-bfc9-67b6a203ba67": {
       "connections": {
-        "false": "0433fd45-1c4d-4f7d-9bcf-50206f130c42",
-        "true": "40bb1c1c-b1c4-42f4-a3ab-95ae3a900765"
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
       },
       "displayName": "Device Registration Tree",
       "nodeType": "InnerTreeEvaluatorNode",
       "x": 1118,
       "y": 107.015625
     },
-    "ce502690-b9d4-453e-ae21-016e4dc32f0b": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "d235b99d-8335-4f03-95f2-5f72dfa95378": {
-      "connections": {
-        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "da944922-bf14-4b1d-8a26-0f9c8c9e594c": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
-    "dae291ea-721a-4a54-8e1b-1b4d649fd535": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
-    },
     "f14894cf-a1b7-4ce2-a96d-c3503e5c91dc": {
       "connections": {
-        "AbortError": "26f443b4-95b9-445b-9ac0-99d9fff068f4",
-        "ConstraintError": "da944922-bf14-4b1d-8a26-0f9c8c9e594c",
-        "DataError": "ce502690-b9d4-453e-ae21-016e4dc32f0b",
-        "EncodingError": "a7a4116e-d481-4f57-aab7-4ee3acc8fc5f",
-        "InvalidStateError": "9c9d3d75-9b70-4be5-be6b-de4ec93bddf3",
-        "NetworkError": "3e3ef555-bf62-41bf-96bb-af3bee50e09e",
-        "NotAllowedError": "10172f63-8b7f-4474-8ffa-ace0ddf1ae20",
-        "NotSupportedError": "9a1e8296-ce79-41c9-926b-8f2676d8f91e",
-        "SecurityError": "47dde40d-96d1-4f36-8a21-bd55a646ad28",
-        "TimeoutError": "a60bf310-175b-4b21-a2e4-af651ad93a8b",
-        "TypeError": "546caa8f-09ac-488f-b953-765746409938",
-        "UnknownError": "2190ba35-eeaa-4794-b783-2c3f46c4eebf"
+        "AbortError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "ConstraintError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "DataError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "EncodingError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "InvalidStateError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "NetworkError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "NotAllowedError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "NotSupportedError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "SecurityError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "TimeoutError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "TypeError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67",
+        "UnknownError": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
       },
       "displayName": "WebAuthenticationDOMException",
       "nodeType": "ScriptedDecisionNode",
       "x": 708,
       "y": 185.015625
-    },
-    "ff5773a9-7185-4150-a1f9-ac960aa3acc7": {
-      "connections": {
-        "outcome": "c17868e4-23e4-49c4-bfc9-67b6a203ba67"
-      },
-      "displayName": "Debug Node",
-      "nodeType": "DebugNode",
-      "x": null,
-      "y": null
     }
   },
   "staticNodes": {

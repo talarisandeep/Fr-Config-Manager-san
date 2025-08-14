@@ -1,0 +1,16 @@
+{
+  "_id": "4eff5c94-7fce-4f0e-901a-bf1691b302f2",
+  "context": "AUTHENTICATION_TREE_DECISION_NODE",
+  "createdBy": "id=76d61c2d-475d-4334-84c6-a877c7774dbe,ou=user,ou=am-config",
+  "creationDate": 1755161661983,
+  "default": false,
+  "description": "Auth Scripts Test",
+  "evaluatorVersion": "1.0",
+  "language": "JAVASCRIPT",
+  "lastModifiedBy": "id=76d61c2d-475d-4334-84c6-a877c7774dbe,ou=user,ou=am-config",
+  "lastModifiedDate": 1755161661983,
+  "name": "Auth Scripts Test",
+  "script": {
+    "file": "scripts-content/AUTHENTICATION_TREE_DECISION_NODE/Auth Scripts Test.js"
+  }
+}

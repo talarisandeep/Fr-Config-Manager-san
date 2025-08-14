@@ -1,12 +1,13 @@
 {
   "_id": "ForgottenUsername",
-  "_rev": "1703131430",
+  "_rev": "-15270298",
   "description": "Forgotten Username Tree",
   "enabled": true,
   "entryNodeId": "5e2a7c95-94af-4b23-8724-deb13853726a",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "5e2a7c95-94af-4b23-8724-deb13853726a": {
       "connections": {

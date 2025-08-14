@@ -1,11 +1,12 @@
 {
   "_id": "Copy of Registration with Email Verification Demo",
-  "_rev": "-1220538142",
+  "_rev": "1356027426",
   "enabled": true,
   "entryNodeId": "4456ccd9-bd8d-4cc0-a92f-f0b65c512210",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "0643094d-cc93-4a35-ae71-e4fdf8258a31": {
       "connections": {

@@ -1,0 +1,34 @@
+{
+  "_id": "1d453646-2405-45e5-90d6-905ee1d57742",
+  "_outcomes": [
+    {
+      "displayName": "Outcome",
+      "id": "outcome"
+    }
+  ],
+  "_rev": "-505801944",
+  "_type": {
+    "_id": "PageNode",
+    "collection": true,
+    "name": "Page Node"
+  },
+  "nodes": [
+    {
+      "_id": "89ea4cc4-48c4-44fe-8bf6-c05bf33d739c",
+      "displayName": "Platform Username",
+      "nodeType": "ValidatedUsernameNode"
+    },
+    {
+      "_id": "395239b9-b083-447b-bb6c-c3e8e42059c3",
+      "displayName": "Platform Password",
+      "nodeType": "ValidatedPasswordNode"
+    }
+  ],
+  "pageDescription": {
+    "en": "One Account, One Informa, More Events"
+  },
+  "pageHeader": {
+    "en": "Log in to your account"
+  },
+  "stage": "{\"pageFooter\":{\"newhere\":\"   <!-- Separator -->\\n    <div class=\\\"d-flex align-items-center\\\" style=\\\"margin-bottom: 1rem\\\">\\n      <hr class=\\\"flex-grow-1\\\">\\n      <span class=\\\"mx-2\\\">Or</span>\\n      <hr class=\\\"flex-grow-1\\\">\\n    </div>\\n<div class=\\\"container text-center mt4\\\">\\n    <!-- Google login button -->\\n    <a href=\\\"#\\\" class=\\\"btn btn-outline-secondary d-flex align-items-center justify-content-center mb-3\\\">\\n      <img src=\\\"https://www.google.com/favicon.ico\\\" alt=\\\"Google\\\" style=\\\"margin-right: 10px;\\\">\\n       Log in with Google\\n    </a>\\n    <!-- LinkedIn login button -->\\n    <a href=\\\"#\\\" class=\\\"btn btn-outline-secondary d-flex align-items-center justify-content-center mb-3\\\">\\n      <img src=\\\"https://cdn-icons-png.flaticon.com/512/174/174857.png\\\" alt=\\\"LinkedIn\\\" height=\\\"20\\\" style=\\\"margin-right: 10px;\\\">\\n       Log in with LinkedIn\\n    </a>\\n\\n<p>First time here?  <a href=\\\"#/service/Registration\\\">Create an account</a></p>\\n\\n  </div>\"},\"themeId\":\"d7827d69-5fda-4422-b43e-48eecde3ff22\"}"
+}

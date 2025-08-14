@@ -1,12 +1,13 @@
 {
   "_id": "MFE_Login",
-  "_rev": "-1271511290",
+  "_rev": "1305054278",
   "description": "Existing Users Login",
   "enabled": true,
   "entryNodeId": "d96beb04-293f-4cd1-b997-95b8380d4122",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "0461130c-a7ba-4738-87db-0135cf87347e": {
       "connections": {

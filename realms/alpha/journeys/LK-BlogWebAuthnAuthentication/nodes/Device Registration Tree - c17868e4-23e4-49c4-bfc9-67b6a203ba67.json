@@ -10,11 +10,12 @@
       "id": "false"
     }
   ],
-  "_rev": "-416253027",
+  "_rev": "-639580554",
   "_type": {
     "_id": "InnerTreeEvaluatorNode",
     "collection": true,
     "name": "Inner Tree Evaluator"
   },
+  "displayErrorOutcome": false,
   "tree": "BlogWebAuthnRegistration"
 }

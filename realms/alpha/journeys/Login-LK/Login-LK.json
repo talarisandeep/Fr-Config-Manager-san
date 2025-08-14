@@ -1,0 +1,90 @@
+{
+  "_id": "Login-LK",
+  "_rev": "-1516342795",
+  "description": "Platform Login Tree",
+  "enabled": true,
+  "entryNodeId": "1d453646-2405-45e5-90d6-905ee1d57742",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "noSession": false,
+  "nodes": {
+    "01604c9e-6fd5-4e0c-a029-dd02763fd55e": {
+      "connections": {
+        "false": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "true": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Inner Tree Evaluator",
+      "nodeType": "InnerTreeEvaluatorNode",
+      "x": 1113,
+      "y": 231
+    },
+    "1d453646-2405-45e5-90d6-905ee1d57742": {
+      "connections": {
+        "outcome": "88d8ea00-67b5-4275-bbcf-10d1498c699f"
+      },
+      "displayName": "Page Node",
+      "nodeType": "PageNode",
+      "x": 210,
+      "y": 108
+    },
+    "88d8ea00-67b5-4275-bbcf-10d1498c699f": {
+      "connections": {
+        "CANCELLED": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "EXPIRED": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "FALSE": "92c1a528-51b4-4f9b-8e04-2eee628cc9d5",
+        "LOCKED": "e301438c-0bd0-429c-ab0c-66126501069a",
+        "TRUE": "9854579d-a1c9-4bf2-a975-9bb53e713843"
+      },
+      "displayName": "Identity Store Decision",
+      "nodeType": "IdentityStoreDecisionNode",
+      "x": 509,
+      "y": 115.5
+    },
+    "92c1a528-51b4-4f9b-8e04-2eee628cc9d5": {
+      "connections": {
+        "Reject": "f8750371-58b7-4c32-875b-8dc26a69217b",
+        "Retry": "1d453646-2405-45e5-90d6-905ee1d57742"
+      },
+      "displayName": "Retry Limit Decision",
+      "nodeType": "RetryLimitDecisionNode",
+      "x": 810,
+      "y": 231
+    },
+    "9854579d-a1c9-4bf2-a975-9bb53e713843": {
+      "connections": {
+        "outcome": "01604c9e-6fd5-4e0c-a029-dd02763fd55e"
+      },
+      "displayName": "Increment Login Count",
+      "nodeType": "IncrementLoginCountNode",
+      "x": 810,
+      "y": 80
+    },
+    "f8750371-58b7-4c32-875b-8dc26a69217b": {
+      "connections": {
+        "outcome": "e301438c-0bd0-429c-ab0c-66126501069a"
+      },
+      "displayName": "Account Lockout",
+      "nodeType": "AccountLockoutNode",
+      "x": 1113,
+      "y": 80
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 1399,
+      "y": 239.16666666666666
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 1399,
+      "y": 98.33333333333333
+    },
+    "startNode": {
+      "x": 70,
+      "y": 182.5
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Authentication\"]"
+  }
+}

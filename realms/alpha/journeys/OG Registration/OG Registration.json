@@ -1,12 +1,13 @@
 {
   "_id": "OG Registration",
-  "_rev": "1763072946",
+  "_rev": "44671218",
   "description": "Platform Registration Tree",
   "enabled": true,
   "entryNodeId": "daf221b5-2222-4be2-b5f5-6553deb72f01",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "1c020043-db85-4ed0-a81f-82f76550c3a5": {
       "connections": {

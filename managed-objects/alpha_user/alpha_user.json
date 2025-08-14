@@ -146,7 +146,6 @@
       "pushDeviceProfiles",
       "webauthnDeviceProfiles",
       "aliasList",
-      "custom_isEmailVerified",
       "custom_userProfileSyncStatus"
     ],
     "properties": {
@@ -514,17 +513,6 @@
         "userEditable": true,
         "viewable": true
       },
-      "custom_isEmailVerified": {
-        "default": "false",
-        "description": null,
-        "format": null,
-        "isVirtual": false,
-        "searchable": false,
-        "title": null,
-        "type": "string",
-        "userEditable": true,
-        "viewable": true
-      },
       "custom_userProfileSyncStatus": {
         "searchable": false,
         "title": null,
@@ -663,13 +651,15 @@
         "viewable": false
       },
       "frIndexedDate1": {
-        "description": "Generic Indexed Date 1",
+        "description": null,
+        "format": null,
         "isPersonal": false,
+        "isVirtual": false,
         "searchable": true,
-        "title": "Generic Indexed Date 1",
+        "title": "created_on",
         "type": "string",
         "usageDescription": null,
-        "userEditable": true,
+        "userEditable": false,
         "viewable": true
       },
       "frIndexedDate2": {
@@ -828,10 +818,14 @@
         "viewable": true
       },
       "frIndexedString1": {
-        "description": "Generic Indexed String 1",
+        "default": "false",
+        "description": null,
+        "format": null,
         "isPersonal": false,
+        "isVirtual": false,
+        "pattern": "\\b(?:true|false)\\b",
         "searchable": true,
-        "title": "Generic Indexed String 1",
+        "title": "isEmailVerified",
         "type": "string",
         "usageDescription": null,
         "userEditable": true,

@@ -6,7 +6,7 @@
       "id": "outcome"
     }
   ],
-  "_rev": "-1594114",
+  "_rev": "-1256647271",
   "_type": {
     "_id": "PageNode",
     "collection": true,
@@ -25,9 +25,10 @@
     }
   ],
   "pageDescription": {
-    "en": "New here? <a href=\"#/service/Registration\">Create an account</a><br><a href=\"#/service/ForgottenUsername\">Forgot username?</a><a href=\"#/service/ResetPassword\"> Forgot password?</a>"
+    "en": "One Account, One Informa, More Events"
   },
   "pageHeader": {
-    "en": "Sign In"
-  }
+    "en": "Log in to your account"
+  },
+  "stage": "{\"pageFooter\":{}}"
 }

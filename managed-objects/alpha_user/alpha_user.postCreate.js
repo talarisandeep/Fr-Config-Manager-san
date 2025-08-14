@@ -37,9 +37,9 @@
 // ForgeRock IDM server-side Javascript (Rhino)
 
 
-/*var URL = Packages.java.net.URL;
+var URL = Packages.java.net.URL;
 var HttpURLConnection = Packages.java.net.HttpURLConnection;
-
+logger.info("Post create hook" );
 var url = new URL("https://webhook-test.com/2d971e023517e014424f85b91a70d861");
 var connection = url.openConnection();
 connection.setRequestMethod("POST");
@@ -54,5 +54,5 @@ writer.close();
 var responseCode = connection.getResponseCode();
 logger.info("HTTP Response code: " + responseCode);
 
-*/
+
 logger.info("HTTP Sandeep Response code: " );

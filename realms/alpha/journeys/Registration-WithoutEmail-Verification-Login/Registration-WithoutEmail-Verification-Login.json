@@ -1,11 +1,12 @@
 {
   "_id": "Registration-WithoutEmail-Verification-Login",
-  "_rev": "1870551645",
+  "_rev": "152149917",
   "enabled": true,
   "entryNodeId": "e301438c-0bd0-429c-ab0c-66126501069a",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {},
   "staticNodes": {},
   "uiConfig": {

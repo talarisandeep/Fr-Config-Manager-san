@@ -1,11 +1,12 @@
 {
   "_id": "passkey_BlogWebAuthnRegistration",
-  "_rev": "-1989695882",
+  "_rev": "586869686",
   "enabled": true,
   "entryNodeId": "e0092f63-6659-403e-af34-4bd412bfa989",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "10e3cc3d-a4c2-4f89-a356-7036d5e9b670": {
       "connections": {},

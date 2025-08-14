@@ -1,11 +1,12 @@
 {
   "_id": "BlogWebAuthnAuthentication",
-  "_rev": "1140723372",
+  "_rev": "-577678356",
   "enabled": true,
   "entryNodeId": "818412de-5831-4dfd-845c-26b316d28cfc",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "233b8fd1-37f5-440c-9489-8681200c79dd": {
       "connections": {

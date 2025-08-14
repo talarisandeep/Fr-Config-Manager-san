@@ -1,6 +1,6 @@
 {
   "_id": "",
-  "_rev": "665024632",
+  "_rev": "40871056",
   "_type": {
     "_id": "oauth-oidc",
     "collection": false,
@@ -69,7 +69,7 @@
     ],
     "tlsCertificateBoundAccessTokensEnabled": true,
     "tlsCertificateRevocationCheckingEnabled": false,
-    "tlsClientCertificateHeaderFormat": "URLENCODED_PEM",
+    "tlsClientCertificateHeaderFormat": "BASE64_ENCODED_CERT",
     "tokenCompressionEnabled": false,
     "tokenEncryptionEnabled": false,
     "tokenExchangeClasses": [
@@ -256,6 +256,7 @@
   "clientDynamicRegistrationConfig": {
     "allowDynamicRegistration": false,
     "dynamicClientRegistrationScope": "dynamic_client_registration",
+    "dynamicClientRegistrationScript": "[Empty]",
     "dynamicClientRegistrationSoftwareStatementRequired": false,
     "generateRegistrationAccessTokens": true,
     "requiredSoftwareStatementAttestedAttributes": [

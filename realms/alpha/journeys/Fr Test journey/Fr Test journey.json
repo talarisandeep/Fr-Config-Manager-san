@@ -1,0 +1,38 @@
+{
+  "_id": "Fr Test journey",
+  "_rev": "-1040074808",
+  "enabled": true,
+  "entryNodeId": "0372e7d6-8358-4a9f-8be0-175f48b7eabc",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "noSession": false,
+  "nodes": {
+    "0372e7d6-8358-4a9f-8be0-175f48b7eabc": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 339.015625,
+      "y": 210.5390625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"demo\"]"
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "_id": "Testjourney",
+  "_rev": "1631676335",
+  "description": "Testjourney",
+  "enabled": true,
+  "entryNodeId": "b82b8ea6-f8f7-4483-aefa-6bf198418294",
+  "identityResource": "managed/alpha_user",
+  "innerTreeOnly": false,
+  "mustRun": false,
+  "noSession": false,
+  "nodes": {
+    "b82b8ea6-f8f7-4483-aefa-6bf198418294": {
+      "connections": {
+        "outcome": "70e691a5-1e33-4ac3-a356-e7b6d60d92e0"
+      },
+      "displayName": "Username Collector",
+      "nodeType": "UsernameCollectorNode",
+      "x": 330.015625,
+      "y": 171.5390625
+    }
+  },
+  "staticNodes": {
+    "70e691a5-1e33-4ac3-a356-e7b6d60d92e0": {
+      "x": 500,
+      "y": 50
+    },
+    "e301438c-0bd0-429c-ab0c-66126501069a": {
+      "x": 500,
+      "y": 350
+    },
+    "startNode": {
+      "x": 50,
+      "y": 250
+    }
+  },
+  "uiConfig": {
+    "categories": "[\"Authentication\"]"
+  }
+}

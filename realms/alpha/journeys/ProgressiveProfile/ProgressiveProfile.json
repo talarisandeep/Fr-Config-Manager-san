@@ -1,12 +1,13 @@
 {
   "_id": "ProgressiveProfile",
-  "_rev": "512701181",
+  "_rev": "-1205700547",
   "description": "Prompt for missing preferences on 3rd login",
   "enabled": true,
   "entryNodeId": "8afdaec3-275e-4301-bb53-34f03e6a4b29",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "423a959a-a1b9-498a-b0f7-596b6b6e775a": {
       "connections": {

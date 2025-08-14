@@ -1,12 +1,13 @@
 {
   "_id": "MFE_Registration",
-  "_rev": "701116139",
+  "_rev": "-1017285589",
   "description": "Platform Registration Tree",
   "enabled": true,
   "entryNodeId": "604d6d84-101f-4817-86d6-b4b75c51f0ac",
   "identityResource": "managed/alpha_user",
   "innerTreeOnly": false,
   "mustRun": false,
+  "noSession": false,
   "nodes": {
     "2a587a3c-8595-428a-8710-61808c1958eb": {
       "connections": {
